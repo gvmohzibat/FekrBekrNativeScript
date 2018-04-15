@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/debug/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

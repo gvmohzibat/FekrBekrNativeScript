@@ -1,0 +1,4 @@
+#Thu Apr 12 19:48:50 IRDT 2018
+base.0=/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

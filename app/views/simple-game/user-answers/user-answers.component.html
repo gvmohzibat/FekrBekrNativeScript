@@ -1,0 +1,7 @@
+<FlexboxLayout id="container">
+    <FlexboxLayout id="user-answers-container">
+        <FlexboxLayout *ngFor="let ans of answers">
+            <dot *ngFor="let d of ans.dots" [color]="d.color"></dot>
+        </FlexboxLayout>
+    </FlexboxLayout>
+</FlexboxLayout>

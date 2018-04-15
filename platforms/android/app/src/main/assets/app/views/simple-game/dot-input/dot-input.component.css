@@ -1,0 +1,11 @@
+#container {
+	padding: 50px;
+	background: #f9f9f9;
+	border-top-width: 3px;
+	border-top-color: #ddd;
+}
+#input-container {
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
