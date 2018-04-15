@@ -11,4 +11,7 @@ export class ColorPalletComponent {
 	colorWidth: number = this.sg.colorWidth;
 	colors = this.sg.colors;
 	constructor(private sg: SimpleGameService) {}
+	selectPallet(c) {
+		this.sg.setInputColor(c.color);
+	}
 }

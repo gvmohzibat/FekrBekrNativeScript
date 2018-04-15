@@ -8,7 +8,13 @@ import { SimpleGameService } from '../simple-game.service';
 	styleUrls: ['./dot-input.component.css']
 })
 export class DotInputComponent {
-    input: any[] = this.sg.current;
+	input: any[] = this.sg.current;
 	dotsCount = this.sg.dotsCount;
 	constructor(private sg: SimpleGameService) {}
+	inputSelect(i) {
+		this.sg.activeInputIndex = i;
+    }
+    submit() {
+        this.sg.submitInput();
+    }
 }

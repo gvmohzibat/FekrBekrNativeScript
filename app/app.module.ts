@@ -14,9 +14,10 @@ import { DotInputComponent } from './views/simple-game/dot-input/dot-input.compo
 import { DotComponent } from './views/simple-game/dot/dot.component';
 import { ColorPalletComponent } from './views/simple-game/color-pallet/color-pallet.component';
 import { UserAnswersComponent } from './views/simple-game/user-answers/user-answers.component';
+import { QuestionComponent } from './views/simple-game/question/question.component';
 
 @NgModule({
-	declarations: [AppComponent, ...navigatableComponents, DotInputComponent, DotComponent, ColorPalletComponent, UserAnswersComponent],
+	declarations: [AppComponent, ...navigatableComponents, DotInputComponent, DotComponent, ColorPalletComponent, UserAnswersComponent, QuestionComponent],
 	bootstrap: [AppComponent],
 	imports: [
 		NativeScriptModule,

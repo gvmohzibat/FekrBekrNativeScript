@@ -1,5 +1,6 @@
 <FlexboxLayout id="container">
     <FlexboxLayout id="colors-container">
-        <GridLayout *ngFor="let c of colors" class="color" [style.backgroundColor]="c.color" [style.width]="colorWidth" [style.height]="colorWidth"></GridLayout>
+        <GridLayout *ngFor="let c of colors; let i = index" class="color" [style.backgroundColor]="c.color" [style.width]="colorWidth"
+            [style.height]="colorWidth" (tap)=selectPallet(c)></GridLayout>
     </FlexboxLayout>
 </FlexboxLayout>

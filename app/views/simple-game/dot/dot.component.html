@@ -1,4 +1,6 @@
 <GridLayout rows="*" columns="*" id="container">
-    <FlexboxLayout id="the-dot-container" [style.backgroundColor]="color" [style.width]="width" [style.height]="width" (tap)=test()>
+    <FlexboxLayout id="the-dot-container" [style.backgroundColor]="question ? Q_COLOR : color" [style.width]="width" [style.height]="width"
+        [class]="selected ? 'selected' : ''">
+        <Label *ngIf="question" text="?" textWrap="true"></Label>
     </FlexboxLayout>
 </GridLayout>

@@ -9,9 +9,9 @@ import { SimpleGameService } from '../simple-game.service';
 })
 export class DotComponent {
 	width: number = this.sg.width;
+	Q_COLOR: string = this.sg.Q_COLOR;
 	@Input() color: string = '#aaa';
+	@Input() question: boolean = false;
+	@Input() selected: boolean = false;
 	constructor(private sg: SimpleGameService) {}
-	test() {
-		this.color = '#aaa';
-	}
 }

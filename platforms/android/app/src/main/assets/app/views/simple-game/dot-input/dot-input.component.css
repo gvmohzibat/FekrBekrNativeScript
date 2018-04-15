@@ -1,11 +1,11 @@
 #container {
 	padding: 50px;
 	background: #f9f9f9;
-	border-top-width: 3px;
-	border-top-color: #ddd;
+	border-top-width: 4px;
+	border-top-color: #bbb;
 }
 #input-container {
 	flex-direction: row;
-	width: 100%;
+	width: 70%;
 	justify-content: space-between;
 }
