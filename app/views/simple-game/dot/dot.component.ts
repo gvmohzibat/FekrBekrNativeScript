@@ -10,8 +10,14 @@ import { SimpleGameService } from '../simple-game.service';
 export class DotComponent {
 	width: number = this.sg.width;
 	Q_COLOR: string = this.sg.Q_COLOR;
-	@Input() color: string = '#aaa';
+	@Input() dot: any = { color: this.sg.NO_COLOR };
 	@Input() question: boolean = false;
 	@Input() selected: boolean = false;
-	constructor(private sg: SimpleGameService) {}
+
+	constructor(private sg: SimpleGameService) {
+		this.sg.revealQuestionEvent.subscribe(result => this.revealQuestionChange(result));
+	}
+	revealQuestionChange(data) {
+		this.question = !data.reveal;
+	}
 }

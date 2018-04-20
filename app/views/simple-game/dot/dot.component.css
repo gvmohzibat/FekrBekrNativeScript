@@ -9,6 +9,25 @@
 	font-size: 20px;
 }
 #the-dot-container.selected {
-    border-color: #000;
+	border-color: #000;
 	border-width: 2px;
+}
+
+.middle-dot {
+	background: #fff;
+	border-radius: 100%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-width: 2px;
+	width: 30%;
+	height: 30%;
+}
+.correct-dot {
+	background: #fff;
+	border-color: #000;
+}
+.place-dot {
+	background: #000;
+	border-color: #fff;
 }

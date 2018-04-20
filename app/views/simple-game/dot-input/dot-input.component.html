@@ -1,7 +1,7 @@
 <FlexboxLayout id="container">
     <FlexboxLayout id="input-container">
         <FlexboxLayout *ngFor="let d of input; let i = index" (tap)=inputSelect(i)>
-            <dot [color]="d.color" [selected]="sg.activeInputIndex == i"></dot>
+            <dot [dot]="d" [selected]="sg.activeInputIndex == i"></dot>
         </FlexboxLayout>
         <!-- <FlexboxLayout>
         </FlexboxLayout> -->

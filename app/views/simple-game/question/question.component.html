@@ -1,7 +1,7 @@
 <FlexboxLayout id="container">
     <FlexboxLayout id="question-container">
         <FlexboxLayout *ngFor="let d of question.dots; let i = index">
-            <dot [color]="d.color" [question]="true"></dot>
+            <dot [dot]="d" [question]="true"></dot>
         </FlexboxLayout>
     </FlexboxLayout>
 </FlexboxLayout>

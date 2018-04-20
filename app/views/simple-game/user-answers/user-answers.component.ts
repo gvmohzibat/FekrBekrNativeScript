@@ -9,5 +9,7 @@ import { SimpleGameService } from '../simple-game.service';
 })
 export class UserAnswersComponent {
 	answers: any[] = this.sg.userAnswers;
+	rowHeight: number = this.sg.width;
+	rowPadding: number = 5;
 	constructor(private sg: SimpleGameService) {}
 }

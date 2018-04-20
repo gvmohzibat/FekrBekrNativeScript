@@ -1,7 +1,10 @@
 <FlexboxLayout id="container">
-    <FlexboxLayout id="user-answers-container">
-        <FlexboxLayout *ngFor="let ans of answers">
-            <dot *ngFor="let d of ans.dots" [color]="d.color"></dot>
+    <ScrollView id="user-answers-scrollView">
+        <FlexboxLayout id="user-answers-container">
+            <FlexboxLayout *ngFor="let ans of answers; let i = index" class="answer-row" [style.height]="rowHeight + 2 * rowPadding"
+                [style.paddingTop.px]="rowPadding" [style.paddingBottom.px]="rowPadding">
+                <dot *ngFor="let d of ans.dots" [dot]="d"></dot>
+            </FlexboxLayout>
         </FlexboxLayout>
-    </FlexboxLayout>
+    </ScrollView>
 </FlexboxLayout>
