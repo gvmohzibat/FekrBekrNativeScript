@@ -4,20 +4,31 @@ import { Injectable, EventEmitter } from '@angular/core';
 export class SimpleGameService {
 	Q_COLOR = '#666';
 	NO_COLOR = '#aaa';
+	ALL_COLORS = [
+		{ color: '#607D8B' }, // gray
+		{ color: '#795548' }, // brown
+		{ color: '#C62828' }, // dark red
+		{ color: '#FF5722' }, // red
+		{ color: '#FF9900' }, // orange
+		{ color: '#FFD600' }, // yellow
+		{ color: '#AFB42B' }, // pooz
+		{ color: '#7CB342' }, // pastei
+		{ color: '#4CAF50' }, // green
+		{ color: '#009688' }, // nafti
+		{ color: '#00BCD4' }, // cyan
+		{ color: '#2196F3' }, // blue
+		{ color: '#3F51B5' }, // dark blue
+		{ color: '#4527A0' }, // purple
+		{ color: '#9C27B0' }, // purple pink
+		{ color: '#E91E63' } // pink
+	];
 	private emptyDot = { color: this.NO_COLOR };
 	dotsCount = 5;
+	colorsCount = 8;
 	current = [];
 	width = 45;
 	colorWidth = 35;
-	colors = [
-		{ color: '#f00' },
-		{ color: '#f90' },
-		{ color: '#aa0' },
-		{ color: '#9f0' },
-		{ color: '#0f0' },
-		{ color: '#0fd' },
-		{ color: '#0ff' }
-	];
+	colors = this.ALL_COLORS;
 	question = { dots: [] };
 
 	// userAnswers
@@ -49,6 +60,7 @@ export class SimpleGameService {
 	}
 
 	constructor() {
+		this.chooseColors();
 		for (let i = 0; i < this.dotsCount; i++) {
 			this.current.push(Object.assign({}, this.emptyDot));
 			this.question.dots.push(Object.assign({}, this.colors[getRandomInt(this.dotsCount)]));
@@ -57,6 +69,16 @@ export class SimpleGameService {
 		this.colorWidth = 40;
 		this.revealQuestionEvent = new EventEmitter<any>();
 		this.newAnswerAdded = new EventEmitter<any>();
+	}
+
+	private chooseColors() {
+		const colorInc = Math.floor(this.ALL_COLORS.length / this.colorsCount);
+		this.colors = [];
+		// let j = 0;
+		for (let i = 0; i < this.colorsCount; i++) {
+			this.colors.push(this.ALL_COLORS[i]);
+			// j += colorInc;
+		}
 	}
 
 	setInputColor(color) {
