@@ -1,10 +1,15 @@
-<FlexboxLayout id="container">
-    <FlexboxLayout id="input-container">
-        <FlexboxLayout *ngFor="let d of input; let i = index" (tap)=inputSelect(i)>
-            <dot [dot]="d" [selected]="sg.activeInputIndex == i"></dot>
+<FlexboxLayout id="container" [ngClass]="{'win': !inputEnabled}">
+    <FlexboxLayout *ngIf="inputEnabled" class="input-container">
+        <FlexboxLayout class="input-dots-container">
+            <FlexboxLayout *ngFor="let d of input; let i = index" (tap)=inputSelect(i)>
+                <dot [dot]="d" [selected]="sg.activeInputIndex == i"></dot>
+            </FlexboxLayout>
+            <!-- <FlexboxLayout>
+            </FlexboxLayout> -->
         </FlexboxLayout>
-        <!-- <FlexboxLayout>
-        </FlexboxLayout> -->
+        <Button id="check-button" text="Check" (tap)=submit()></Button>
     </FlexboxLayout>
-    <Button text="Check" (tap)=submit()></Button>
+    <FlexboxLayout *ngIf="!inputEnabled">
+        <Label class="input-disabled" text="YOU WON!!" textWrap="true"></Label>
+    </FlexboxLayout>
 </FlexboxLayout>

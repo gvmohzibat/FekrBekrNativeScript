@@ -1,3 +1,12 @@
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/list/list.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/simple-game.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/user-answers/user-answers.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/question/question.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/dot-input/dot-input.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/dot/dot.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/color-pallet/color-pallet.component.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/views/simple-game/simple-game.service.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/services/test.service.js
 /home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/app.component.js
 /home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/color/color.js
 /home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/color/color-common.js
@@ -221,3 +230,4 @@
 /home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/main.js
 /home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/app.module.js
 /home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/main.aot.js
+/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app/app.routing.js

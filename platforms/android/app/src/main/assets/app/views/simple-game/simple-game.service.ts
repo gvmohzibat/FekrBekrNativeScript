@@ -47,16 +47,16 @@ export class SimpleGameService {
 		return this._activeInputIndex;
 	}
 
-	// revealQuestion
-	revealQuestionEvent: EventEmitter<any>;
-	set revealQuestion(current) {
-		this.revealQuestionEvent.emit({ reveal: true });
+	// gameFinished
+	$gameFinished: EventEmitter<any>;
+	set gameFinished(current) {
+		this.$gameFinished.emit({ reveal: true, disableInput: true, disablePallet: true });
 	}
 
-	// revealQuestion
-	newAnswerAdded: EventEmitter<any>;
+	// gameFinished
+	$newAnswerAdded: EventEmitter<any>;
 	emitUserAnswerAdded() {
-		this.newAnswerAdded.emit({});
+		this.$newAnswerAdded.emit({});
 	}
 
 	constructor() {
@@ -67,8 +67,8 @@ export class SimpleGameService {
 		}
 		this.width = 45;
 		this.colorWidth = 40;
-		this.revealQuestionEvent = new EventEmitter<any>();
-		this.newAnswerAdded = new EventEmitter<any>();
+		this.$gameFinished = new EventEmitter<any>();
+		this.$newAnswerAdded = new EventEmitter<any>();
 	}
 
 	private chooseColors() {
@@ -113,7 +113,7 @@ export class SimpleGameService {
 				}
 			});
 		} else {
-			this.revealQuestion = true;
+			this.gameFinished = true;
 		}
 
 		this.userAnswers.push({ dots: answer });

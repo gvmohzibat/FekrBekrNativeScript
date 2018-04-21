@@ -10,8 +10,14 @@ import { SimpleGameService } from '../simple-game.service';
 export class ColorPalletComponent {
 	colorWidth: number = this.sg.colorWidth;
 	colors = this.sg.colors;
-	constructor(private sg: SimpleGameService) {}
+	palletEnabled: boolean = true;
+	constructor(private sg: SimpleGameService) {
+		this.sg.$gameFinished.subscribe(result => this.gameFinished(result));
+	}
 	selectPallet(c) {
 		this.sg.setInputColor(c.color);
+	}
+	gameFinished(data) {
+		this.palletEnabled = !data.disablePallet;
 	}
 }

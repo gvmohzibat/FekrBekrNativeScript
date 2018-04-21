@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/drawable-v21/abc_edit_text_material.xml"
+    }
+]

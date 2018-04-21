@@ -10,11 +10,17 @@ import { SimpleGameService } from '../simple-game.service';
 export class DotInputComponent {
 	input: any[] = this.sg.current;
 	dotsCount = this.sg.dotsCount;
-	constructor(private sg: SimpleGameService) {}
+	inputEnabled: boolean = true;
+	constructor(private sg: SimpleGameService) {
+		this.sg.$gameFinished.subscribe(result => this.gameFinished(result));
+	}
 	inputSelect(i) {
 		this.sg.activeInputIndex = i;
-    }
-    submit() {
-        this.sg.submitInput();
-    }
+	}
+	submit() {
+		this.sg.submitInput();
+	}
+	gameFinished(data) {
+		this.inputEnabled = !data.disableInput;
+	}
 }

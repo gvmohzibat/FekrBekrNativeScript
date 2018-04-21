@@ -15,7 +15,7 @@ export class DotComponent {
 	@Input() selected: boolean = false;
 
 	constructor(private sg: SimpleGameService) {
-		this.sg.revealQuestionEvent.subscribe(result => this.revealQuestionChange(result));
+		this.sg.$gameFinished.subscribe(result => this.revealQuestionChange(result));
 	}
 	revealQuestionChange(data) {
 		this.question = !data.reveal;

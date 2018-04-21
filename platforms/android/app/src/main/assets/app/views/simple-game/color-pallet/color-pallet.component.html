@@ -1,4 +1,4 @@
-<FlexboxLayout id="container">
+<FlexboxLayout *ngIf="palletEnabled" id="container">
     <ScrollView orientation="horizontal" style="width: 100%">
         <FlexboxLayout id="colors-container">
             <FlexboxLayout *ngFor="let c of colors; let i = index" class="color" [style.backgroundColor]="c.color" [style.width]="colorWidth"

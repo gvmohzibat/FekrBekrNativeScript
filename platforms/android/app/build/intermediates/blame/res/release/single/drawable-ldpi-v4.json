@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/icon.png",
+        "source": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/background.png",
+        "source": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/res/drawable-ldpi/background.png"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/drawable-ldpi-v4/logo.png",
+        "source": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/res/drawable-ldpi/logo.png"
+    }
+]

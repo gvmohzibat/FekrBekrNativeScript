@@ -12,7 +12,7 @@ import { Page } from 'ui/page';
 export class SimpleGameComponent implements OnInit {
 	dotsCount = this.sg.dotsCount;
 	constructor(private sg: SimpleGameService, private page: Page) {
-		this.sg.newAnswerAdded.subscribe(result => this.scrollUserAnswersViewToBottom());
+		this.sg.$newAnswerAdded.subscribe(result => this.scrollUserAnswersViewToBottom());
 	}
 	ngOnInit() {
 		this.page.actionBarHidden = true;

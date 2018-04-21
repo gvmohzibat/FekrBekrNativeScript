@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/vmoh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/f5a98bbac3a23328c6c461c8c458ef41/res/layout-v21/notification_template_icon_group.xml"
+    }
+]
