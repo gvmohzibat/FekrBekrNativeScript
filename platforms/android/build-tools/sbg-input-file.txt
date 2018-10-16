@@ -1,1 +1,0 @@
-/home/vmoh/git_projs/native-script/HelloWorld/platforms/android/app/src/main/assets/app

@@ -1,8 +1,0 @@
-<GridLayout rows="*" columns="*" id="container">
-    <FlexboxLayout id="the-dot-container" [style.backgroundColor]="question && revealQuestion ? Q_COLOR : dot.color" [style.width]="width"
-        [style.height]="width" [class]="selected ? 'selected' : ''">
-        <Label *ngIf="question" text="?" textWrap="true"></Label>
-        <FlexboxLayout *ngIf="!question && dot.correct" class="middle-dot correct-dot"></FlexboxLayout>
-        <FlexboxLayout *ngIf="!question && dot.place" class="middle-dot place-dot"></FlexboxLayout>
-    </FlexboxLayout>
-</GridLayout>
